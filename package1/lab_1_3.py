@@ -1,6 +1,3 @@
-from pathlib import Path
-
-
 def read_file(path):
     f = open(path, 'r')
     lines = f.readlines()
@@ -108,7 +105,7 @@ def seidel(alpha, beta, norm_a, n, eps):
             return x, k
 
 
-eps, A, b, n = read_file(Path(__file__).with_name("input_1_3.txt"))
+eps, A, b, n = read_file("input_1_3.txt")
 alpha, beta, norm_a = get_alpha_beta(A, b, n)
 
 x_mpi, k_mpi = mpi(alpha, beta, norm_a, n, eps)

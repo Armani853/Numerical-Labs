@@ -1,6 +1,5 @@
 
 import matplotlib.pyplot as plt
-from pathlib import Path
 
 
 def progonka(a, b, c, d):
@@ -67,7 +66,7 @@ def spline(t, x, a, b, c, d):
             return s, i + 1
 
 
-f_in = open(Path(__file__).with_name('input_3_2.txt'), 'r')
+f_in = open('input_3_2.txt', 'r')
 lines = f_in.readlines()
 f_in.close()
 
@@ -120,6 +119,6 @@ plt.grid()
 plt.xlabel('x')
 plt.ylabel('y')
 plt.legend()
-plt.savefig(Path(__file__).with_name('graph_3_2.png'), dpi=200)
+plt.savefig('graph_3_2.png', dpi=200)
 plt.show()
 

@@ -1,5 +1,4 @@
 import math
-from pathlib import Path
 
 
 def read_input(filename):
@@ -117,7 +116,7 @@ def simple_iteration(x0, eps, q):
 
 
 def main():
-    n, eps, q, x0 = read_input(Path(__file__).with_name("input_2_2.txt"))
+    n, eps, q, x0 = read_input("input_2_2.txt")
 
     sol_n, k_n = newton_method(x0, eps)
     sol_i, k_i = simple_iteration(x0, eps, q)

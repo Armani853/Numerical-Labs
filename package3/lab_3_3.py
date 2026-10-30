@@ -1,5 +1,4 @@
 import matplotlib.pyplot as plt
-from pathlib import Path
 
 
 def gauss(A, B):
@@ -60,7 +59,7 @@ def poly_str(coef):
     return s
 
 
-f_in = open(Path(__file__).with_name("input_3_3.txt"), "r")
+f_in = open("input_3_3.txt", "r")
 lines = f_in.readlines()
 f_in.close()
 

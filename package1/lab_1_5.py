@@ -1,5 +1,4 @@
 import math
-from pathlib import Path
 
 def mat_mul(A, B):
     n = len(A)
@@ -117,7 +116,7 @@ def print_matrix(M):
         print(" ".join(f"{x:10.4f}" for x in row))
 
 
-f = open(Path(__file__).with_name("input_1_5.txt"), "r")
+f = open("input_1_5.txt", "r")
 lines = [line.strip() for line in f if line.strip() and not line.startswith("#")]
 f.close()
 

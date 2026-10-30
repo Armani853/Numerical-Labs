@@ -1,5 +1,4 @@
 import math
-from pathlib import Path
 
 def eye(n):
     return [[1.0 if i == j else 0.0 for j in range(n)] for i in range(n)]
@@ -84,7 +83,7 @@ def jacobi(A, eps):
     return eigenvalues, V
 
 def main():
-    f = open(Path(__file__).with_name("input_1_4.txt"), "r")
+    f = open("input_1_4.txt", "r")
     lines = [line.strip() for line in f if line.strip()]
     f.close()
 

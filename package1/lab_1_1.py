@@ -1,6 +1,3 @@
-from pathlib import Path
-
-
 def mat_mult(A, B):
     n = len(A)
     m = len(B[0])
@@ -102,7 +99,7 @@ def get_inverse(L, U, P):
 
 
 def main():
-    f = open(Path(__file__).with_name("input_1_1.txt"), "r")
+    f = open("input_1_1.txt", "r")
     lines = f.readlines()
     f.close()
 

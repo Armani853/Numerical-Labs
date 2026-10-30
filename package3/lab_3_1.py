@@ -1,5 +1,4 @@
 import math
-from pathlib import Path
 import matplotlib.pyplot as plt
 
 def f(x):
@@ -68,7 +67,7 @@ def linspace(start, stop, num):
     return [start + i * step for i in range(num)]
 
 
-f_in = open(Path(__file__).with_name("input_3_1.txt"), "r")
+f_in = open("input_3_1.txt", "r")
 lines = f_in.readlines()
 f_in.close()
 

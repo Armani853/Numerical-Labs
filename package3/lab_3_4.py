@@ -1,7 +1,4 @@
-from pathlib import Path
-
-
-f_in = open(Path(__file__).with_name("input_3_4.txt"), "r")
+f_in = open("input_3_4.txt", "r")
 lines = f_in.readlines()
 f_in.close()
 

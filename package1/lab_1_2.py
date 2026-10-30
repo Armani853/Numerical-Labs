@@ -1,6 +1,4 @@
-from pathlib import Path
-
-with open(Path(__file__).with_name("input_1_2.txt")) as file:
+with open("input_1_2.txt") as file:
     rows = [[float(number) for number in line.split()] for line in file]
 
 a = []

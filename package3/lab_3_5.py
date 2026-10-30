@@ -1,5 +1,4 @@
 import math
-from pathlib import Path
 
 def f(x):
     return 1.0 / (x**4 + 16.0)
@@ -42,7 +41,7 @@ def simpson(a, b, h):
             s += 2.0 * f(a + i * h)
     return s * h / 3.0
 
-f_in = open(Path(__file__).with_name("input_3_5.txt"), "r")
+f_in = open("input_3_5.txt", "r")
 data = f_in.read().split()
 f_in.close()
 

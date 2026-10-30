@@ -1,5 +1,4 @@
 import math
-from pathlib import Path
 
 def f(x):
     return x**3 - 2 * x**2 - 10 * x + 15
@@ -64,7 +63,7 @@ def simple_iterations(a, b, eps, q):
 
     return x_new, res
 
-f_in = open(Path(__file__).with_name("input_2_1.txt"), "r")
+f_in = open("input_2_1.txt", "r")
 lines = f_in.readlines()
 f_in.close()
 
